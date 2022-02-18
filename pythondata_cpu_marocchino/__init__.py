@@ -4,30 +4,30 @@ data_location = os.path.join(__dir__, "verilog")
 src = "https://github.com/openrisc/or1k_marocchino.git"
 
 # Module version
-version_str = "0.0.post190"
-version_tuple = (0, 0, 190)
+version_str = "0.0.post193"
+version_tuple = (0, 0, 193)
 try:
     from packaging.version import Version as V
-    pversion = V("0.0.post190")
+    pversion = V("0.0.post193")
 except ImportError:
     pass
 
 # Data version info
-data_version_str = "0.0.post64"
-data_version_tuple = (0, 0, 64)
+data_version_str = "0.0.post67"
+data_version_tuple = (0, 0, 67)
 try:
     from packaging.version import Version as V
-    pdata_version = V("0.0.post64")
+    pdata_version = V("0.0.post67")
 except ImportError:
     pass
-data_git_hash = "79ce290612a0d410023998f258a1755abbea56bc"
-data_git_describe = "v0.0-64-g79ce290"
+data_git_hash = "6e010fd5b1da54632939052e7007c9c412aae6bb"
+data_git_describe = "v0.0-67-g6e010fd"
 data_git_msg = """\
-commit 79ce290612a0d410023998f258a1755abbea56bc
+commit 6e010fd5b1da54632939052e7007c9c412aae6bb
 Author: Andrey Bacherov <bandvig@mail.ru>
-Date:   Tue Nov 23 23:18:24 2021 +0300
+Date:   Wed Feb 9 10:52:12 2022 +0300
 
-    restore travis killed by previous merge
+    Final fix I(D)MMUs super-cache miss detection. Plus some re-factoring.
 
 """
 
